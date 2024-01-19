@@ -1,0 +1,23 @@
+.bodyWrapper {
+    display: flex;
+    padding: 10px;
+}
+
+.modalWrapper {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75)
+}
+
+.modalContent {
+    background: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+}
