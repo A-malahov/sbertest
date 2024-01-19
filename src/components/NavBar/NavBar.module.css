@@ -11,3 +11,9 @@
 .addCommentButton{
 margin-left: 10px;
 }
+.addCommentWrapper{
+    display: flex;
+    width: 100%;
+}
+
+

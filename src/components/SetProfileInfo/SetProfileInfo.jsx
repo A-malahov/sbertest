@@ -31,7 +31,7 @@ function SetProfileInfo({setUserData, setFirstLaunch}) {
 
 
     const validation = !!name && !!surname && !!email && !!phoneNumber && !errorEmail;
-    console.log(!validation)
+
     return (
         <div className={'modalWrapper'}>
             <div className={'modalContent'}>
@@ -73,6 +73,7 @@ function SetProfileInfo({setUserData, setFirstLaunch}) {
 
                 <Button
                     disabled={(!validation)}
+                    variant={!validation ? ('danger') : ('success')}
                     onClick={() => {
                         setUserData(
                             {

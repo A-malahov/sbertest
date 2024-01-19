@@ -1,12 +1,32 @@
-.avatar{
+.avatar {
     width: 150px;
 }
-.profileBar{
+
+.profileBar {
     padding: 15px;
 }
+
 .tableElement:hover {
     cursor: pointer;
 }
-.tableWrapper{
-    margin: 15px;
+
+.tableWrapper {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    margin: 0 15px 15px 15px;
+}
+
+.controlsBar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    background: gray;
+    display: flex;
+}
+
+.addUserButton {
+    margin-left: auto;
+    margin-right: 0;
 }
