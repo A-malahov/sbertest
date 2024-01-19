@@ -1,9 +1,11 @@
 import Table from "react-bootstrap/Table";
+import styles from './Table.module.css'
+import {Button} from "react-bootstrap";
 
-function UsersTable({userList}) {
+function UsersTable({userList,setUserInfoIndex, setModal, setSearch, search}) {
    const usersElement = userList.map((item,index)=>{
        return(
-           <tr key={index}>
+           <tr className={styles.tableElement} onClick={()=>setUserInfoIndex(item.id)} key={index}>
            <td>{item.name}</td>
            <td>{item.surname}</td>
            <td>{item.email}</td>
@@ -13,9 +15,14 @@ function UsersTable({userList}) {
    });
 
 return(
-    <>
+    <div>
+        <div>
+        <Button onClick={()=> setModal(true)}>Добавить пользователя</Button>
+        <input onChange={(e)=> setSearch(e.target.value)} value={search} type={'text'} />
+        </div>
 
-        <Table striped bordered hover variant="dark">
+        <div className={styles.tableWrapper}>
+        <Table striped bordered hover variant="white">
             <thead>
             <tr>
 
@@ -29,7 +36,8 @@ return(
             {usersElement}
             </tbody>
         </Table>
-    </>
+        </div>
+    </div>
 )
 }
 

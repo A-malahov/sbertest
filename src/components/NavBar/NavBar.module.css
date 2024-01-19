@@ -1,0 +1,13 @@
+.navBar{
+    display: flex;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+}
+.rateButton{
+    margin-left: 10px;
+}
+
+.addCommentButton{
+margin-left: 10px;
+}

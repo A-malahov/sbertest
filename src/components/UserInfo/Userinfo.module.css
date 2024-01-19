@@ -1,0 +1,31 @@
+.infowrapper{
+    display: flex;
+}
+
+.pagewrapper{
+    width: 100vw;
+}
+
+.comments{
+    padding: 15px;
+}
+
+.divider {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    opacity: 0.5;
+    background-color: black;
+    margin: 5px;
+}
+
+.avatar{
+    width: 150px;
+
+}

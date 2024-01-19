@@ -1,0 +1,12 @@
+.avatar{
+    width: 150px;
+}
+.profileBar{
+    padding: 15px;
+}
+.tableElement:hover {
+    cursor: pointer;
+}
+.tableWrapper{
+    margin: 15px;
+}
